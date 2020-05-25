@@ -4,32 +4,37 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
-public class Player : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
+    [Header("General")]
     [Tooltip("In ms^-1")] [SerializeField] float xSpeed = 10f;
     [Tooltip("In m")] [SerializeField] float xRange = 6f;
     [Tooltip("In ms^-1")] [SerializeField] float ySpeed = 10f;
-    [Tooltip("In m")] [SerializeField] float yRange = 2.75f;
+    [Tooltip("In m")] [SerializeField] float yRange = 4f;
 
+    [Header("Screen-position Based")]
     [SerializeField] float positionPitchFactor = -5f;
-    [SerializeField] float controlPitchFactor = -20f;
     [SerializeField] float positionYawFactor = 5f;
+
+    [Header("Control-throw Based")]
+    [SerializeField] float controlPitchFactor = -20f;
     [SerializeField] float controlRollFactor = -20f;
 
     float xThrow, yThrow;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+    bool isControlEnabled = true;
     // Update is called once per frame
     void Update()
     {
-        ProcessTranslation();
-        ProcessRotation();
+        if (isControlEnabled)
+        {
+            ProcessTranslation();
+            ProcessRotation();
+        }
     }
-
+    void OnPlayerDeath() // called by string reference
+    {
+        isControlEnabled = false;
+    }
     private void ProcessRotation()
     {
         float pitchDueToPosition = transform.localPosition.y * positionPitchFactor;
