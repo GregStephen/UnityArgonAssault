@@ -1043,6 +1043,8 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: -342224253652574050, guid: e0e68a98a9db67b40b39f63fb95d9e66, type: 2}
     value: {fileID: 963194229}
+  - key: {fileID: -2748423805549064014, guid: e0e68a98a9db67b40b39f63fb95d9e66, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References:
     - 00129d1bcf16df949a4b215458ee970f: {fileID: 1712582256}
@@ -1260,6 +1262,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.000001554889
+      objectReference: {fileID: 0}
+    - target: {fileID: 9192470890426997884, guid: 99bed6e5c2eca014ba491806872cea0e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 9192470890426997884, guid: 99bed6e5c2eca014ba491806872cea0e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 9192470890426997884, guid: 99bed6e5c2eca014ba491806872cea0e,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 9196034975564158900, guid: 99bed6e5c2eca014ba491806872cea0e,
         type: 3}
@@ -1629,6 +1646,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9192470890426997884, guid: 99bed6e5c2eca014ba491806872cea0e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 9192470890426997884, guid: 99bed6e5c2eca014ba491806872cea0e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 9192470890426997884, guid: 99bed6e5c2eca014ba491806872cea0e,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 9196034975564158900, guid: 99bed6e5c2eca014ba491806872cea0e,
         type: 3}
@@ -6585,6 +6617,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 359.9785
       objectReference: {fileID: 0}
+    - target: {fileID: 9192470890426997884, guid: 99bed6e5c2eca014ba491806872cea0e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 9192470890426997884, guid: 99bed6e5c2eca014ba491806872cea0e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 9192470890426997884, guid: 99bed6e5c2eca014ba491806872cea0e,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 9196034975564158900, guid: 99bed6e5c2eca014ba491806872cea0e,
         type: 3}
       propertyPath: m_Name
@@ -6727,6 +6774,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Laser Right
       objectReference: {fileID: 0}
+    - target: {fileID: 2623636650978498509, guid: a99bef20ce1409945a229056d7d3aaf2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2623636650978498512, guid: a99bef20ce1409945a229056d7d3aaf2,
         type: 3}
       propertyPath: CollisionModule.enabled
@@ -6750,7 +6802,7 @@ PrefabInstance:
     - target: {fileID: 2623636650978498512, guid: a99bef20ce1409945a229056d7d3aaf2,
         type: 3}
       propertyPath: playOnAwake
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2883838001503778863, guid: a99bef20ce1409945a229056d7d3aaf2,
         type: 3}
@@ -6817,6 +6869,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Laser Left
       objectReference: {fileID: 0}
+    - target: {fileID: 7803085065250732230, guid: a99bef20ce1409945a229056d7d3aaf2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7803085065250732251, guid: a99bef20ce1409945a229056d7d3aaf2,
         type: 3}
       propertyPath: CollisionModule.enabled
@@ -6840,7 +6897,7 @@ PrefabInstance:
     - target: {fileID: 7803085065250732251, guid: a99bef20ce1409945a229056d7d3aaf2,
         type: 3}
       propertyPath: playOnAwake
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a99bef20ce1409945a229056d7d3aaf2, type: 3}
